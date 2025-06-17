@@ -19,7 +19,7 @@ class StartScreen extends StatelessWidget {
           ),
           SizedBox(height: 25),
           Text(
-            'Fast Questions! Smart Fun!',
+            'Fast Questions. Smart Fun!',
             style: GoogleFonts.lato(
               color: const Color.fromARGB(255, 255, 223, 186), // Soft Peach
               fontSize: 24,
