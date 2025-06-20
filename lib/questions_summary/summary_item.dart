@@ -30,7 +30,7 @@ class SummaryItem extends StatelessWidget {
                   itemData['question'] as String,
                   style: GoogleFonts.lato(
                     color: Colors.white,
-                    fontSize: 16,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -39,12 +39,14 @@ class SummaryItem extends StatelessWidget {
                   itemData['user_answer'] as String,
                   style: const TextStyle(
                     color: Color.fromARGB(255, 202, 171, 252),
+                    fontSize: 20,
                   ),
                 ),
                 Text(
                   itemData['correct_answer'] as String,
                   style: const TextStyle(
                     color: Color.fromARGB(255, 181, 254, 246),
+                    fontSize: 20,
                   ),
                 ),
               ],

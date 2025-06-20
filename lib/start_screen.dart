@@ -15,13 +15,13 @@ class StartScreen extends StatelessWidget {
           Image.asset(
             'assets/images/quiz-logo.png',
             width: 350,
-            color: Color.fromARGB(200, 250, 250, 250), // Subtle off-white
+            color: Color.fromARGB(150, 255, 255, 255),
           ),
           SizedBox(height: 25),
           Text(
             'Fast Questions. Smart Fun!',
             style: GoogleFonts.lato(
-              color: const Color.fromARGB(255, 255, 223, 186), // Soft Peach
+              color: const Color.fromARGB(255, 237, 223, 252),
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
@@ -34,7 +34,7 @@ class StartScreen extends StatelessWidget {
             label: Text(
               'Start Quiz',
               style: GoogleFonts.lato(
-                color: Color.fromARGB(255, 255, 223, 186), // Soft Peach
+                color: Color.fromARGB(255, 237, 223, 252),
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
