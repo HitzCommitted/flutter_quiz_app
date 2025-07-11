@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quiz_app/data/questions.dart';
+import 'package:flutter_quiz_app/models/quiz_question.dart';
 import 'package:flutter_quiz_app/questions_summary/questions_summary.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -8,10 +8,12 @@ class ResultsScreen extends StatelessWidget {
     super.key,
     required this.chosenAnswers,
     required this.onRestart,
+    required this.questions,
   });
 
   final void Function() onRestart;
   final List<String> chosenAnswers;
+  final List<QuizQuestion> questions;
 
   List<Map<String, Object>> get summaryData {
     final List<Map<String, Object>> summary = [];
@@ -20,7 +22,7 @@ class ResultsScreen extends StatelessWidget {
       summary.add({
         'question_index': i,
         'question': questions[i].text,
-        'correct_answer': questions[i].answers[0],
+        'correct_answer': questions[i].correctAnswer,
         'user_answer': chosenAnswers[i],
       });
     }
